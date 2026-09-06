@@ -11,3 +11,48 @@ p{
 a {
   color: red;
 }
+nav{
+  background-color: #14532D;
+  padding: 15px;
+  text-align: center;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: gold;
+}
+body > h1 {
+  text-align: center;
+  color: #14532D;
+  margin-top: 30px;
+}
+div {
+  background-color: white;
+  width: 70%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+div h1 {
+  text-align: center;
+  color: #14532D;
+  border-bottom: 3px solid gold;
+  padding-bottom: 10px;
+}
+div p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+ul {
+  line-height: 1.8;
+}
+li{
+  padding: 4px;
+}
