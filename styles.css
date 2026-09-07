@@ -56,3 +56,20 @@ ul {
 li{
   padding: 4px;
 }
+button {
+  background-color: #14532D;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  marging-top: 20px;
+}
+button:hover{
+  background-color:#1f7a42;
+}
+#result{
+  font-size: 20px;
+  color: #1453D;
+}
