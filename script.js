@@ -1,26 +1,24 @@
-document.getElementById("submitQuiz").addEventListener("click", function () {
+let score = 0;
 
-    let score = 0;
+const answers = document.querySelectorAll(".answer");
+const feedback = document.getElementById("feedback");
+const scoreButton = document.getElementById("scoreButton");
+const finalScore = document.getElementById("finalScore");
 
-    let q1 = document.querySelector('input[name="q1"]:checked');
-    let q2 = document.querySelector('input[name="q2"]:checked');
-    let q3 = document.querySelector('input[name="q3"]:checked');
+function checkAnswer(event) {
 
-    if (q1 && q1.value === "Uruguay") {
+    if (event.target.dataset.correct === "true") {
+        feedback.textContent = "Correct!";
         score++;
+    } else {
+        feedback.textContent = "Incorrect. Try again!";
     }
+}
 
-    if (q2 && q2.value === "Brazil") {
-        score++;
-    }
-
-    if (q3 && q3.value === "Miroslav Klose") {
-        score++;
-    }
-
-    document.getElementById("result").textContent =
-        "You scored " + score + " out of 3!";
+answers.forEach(function(answer) {
+    answer.addEventListener("click", checkAnswer);
 });
 
-
-
+scoreButton.addEventListener("click", function() {
+    finalScore.textContent = "Your Score: " + score + " out of 5";
+});
