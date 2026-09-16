@@ -1,0 +1,627 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #20252d;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background-color: #111827;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #dddddd;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff6b35;
+}
+
+#menuButton {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    min-height: 85vh;
+
+    /*
+       Put your laptop picture here.
+       Example:
+       background-image: url("laptop.jpg");
+    */
+
+    background-image:
+        linear-gradient(
+            rgba(15, 23, 42, 0.75),
+            rgba(15, 23, 42, 0.75)
+        ),
+        url("laptop.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+}
+
+.hero-content {
+    width: 84%;
+    max-width: 900px;
+
+    margin: auto;
+
+    color: white;
+}
+
+.welcome {
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #ff6b35;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #ff6b35;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero-content > p {
+    max-width: 650px;
+    font-size: 19px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.button {
+    padding: 13px 24px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.primary {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #e85b29;
+}
+
+.secondary:hover {
+    background-color: white;
+    color: #111827;
+}
+
+
+/* ---------- General Sections ---------- */
+
+.section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    color: #ff6b35;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+
+/* ---------- About ---------- */
+
+.about-container {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 50px;
+
+    max-width: 1100px;
+    margin: auto;
+
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 29px;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 16px;
+
+    font-size: 17px;
+
+    color: #5b6472;
+}
+
+.about-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-card div {
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.about-card div:last-child {
+    border-bottom: none;
+}
+
+.about-card strong {
+    color: #ff6b35;
+}
+
+
+/* ---------- Skills ---------- */
+
+.dark-section {
+    background-color: #111827;
+    color: white;
+}
+
+.skills-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #1f2937;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card h3 {
+    color: #ff6b35;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+.skill-card p {
+    margin: 8px 0;
+
+    color: #d1d5db;
+}
+
+
+/* ---------- Projects ---------- */
+
+.projects-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-image {
+    height: 210px;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #374151
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image span {
+    font-size: 65px;
+
+    font-weight: bold;
+
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    margin-bottom: 12px;
+}
+
+.project-info p {
+    color: #697180;
+
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+}
+
+.project-tech span {
+    background-color: #eeeeee;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+.project-info button {
+    border: none;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.project-info button:hover {
+    background-color: #ff6b35;
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-section {
+    background-color: #eeeeee;
+}
+
+.contact-container {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+.contact-text h3 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.contact-text p {
+    color: #606773;
+
+    margin-bottom: 15px;
+}
+
+form {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+form label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #ff6b35;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #e85b29;
+}
+
+#formMessage {
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #0b1120;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+}
+
+.footer-links {
+    margin: 20px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #ff6b35;
+}
+
+.copyright {
+    color: #9ca3af;
+
+    font-size: 14px;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 900px) {
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: #111827;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-container,
+    .projects-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 70px 5%;
+    }
+
+}
