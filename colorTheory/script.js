@@ -14,19 +14,19 @@ const palettes = {
 
     palette1: {
 
-        name: "Palette 1",
+        name: "Complementary",
 
-        primary: "#2563EB",
+        primary: "#8B1E1E",
 
-        secondary: "#0F766E",
+        secondary: "#1F8C3E",
 
-        accent: "#F97316",
+        accent: "#FFB8B8",
 
-        background: "#FFFFFF",
+        background: "#4D2424",
 
-        surface: "#F3F4F6",
+        surface: "#1F3726",
 
-        text: "#1F2937"
+        text: "#FFB8B8"
 
     },
 
