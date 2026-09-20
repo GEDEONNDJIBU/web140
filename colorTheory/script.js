@@ -33,19 +33,19 @@ const palettes = {
 
     palette2: {
 
-        name: "Palette 2",
+        name: "Analogous",
 
-        primary: "#6D28D9",
+        primary: "#2463AB",
 
-        secondary: "#BE185D",
+        secondary: "#238EA8",
 
-        accent: "#B45309",
+        accent: "#23A898",
 
-        background: "#FFFFFF",
+        background: "#233AA8",
 
-        surface: "#F5F3FF",
+        surface: "#EAF4F8",
 
-        text: "#1F2937"
+        text: "#3823A8"
 
     },
 
