@@ -52,19 +52,19 @@ const palettes = {
 
     palette3: {
 
-        name: "Palette 3",
+        name: "Triadic",
 
-        primary: "#166534",
+        primary: "#80A857",
 
-        secondary: "#0369A1",
+        secondary: "#A86A58",
 
-        accent: "#B45309",
+        accent: "#5868A8",
 
-        background: "#FFFFFF",
+        background: "#4D5347",
 
-        surface: "#F0FDF4",
+        surface: "#33241F",
 
-        text: "#172018"
+        text: "#FFFFFF"
 
     }
 
