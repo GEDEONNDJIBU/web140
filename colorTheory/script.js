@@ -22,7 +22,7 @@ const palettes = {
 
         accent: "#FFB8B8",
 
-        background: "#4D2424",
+        background: "#F2F8FA",
 
         surface: "#1F3726",
 
