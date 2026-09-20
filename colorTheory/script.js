@@ -45,7 +45,7 @@ const palettes = {
 
         surface: "#EAF4F8",
 
-        text: "#3823A8"
+        text: "#FFFFFF"
 
     },
 
