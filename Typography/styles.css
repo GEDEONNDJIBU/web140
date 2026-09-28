@@ -191,20 +191,11 @@ body {
 
 .editorial h2 {
 
-    /* FILL IN: Choose your heading font */
-    font-family: "________________________", serif;
-
-    /* FILL IN: Example: 72px */
-    font-size: ______px;
-
-    /* FILL IN: Example: 600 */
-    font-weight: ______;
-
-    /* FILL IN: Example: 1.05 */
-    line-height: ______;
-
-    /* FILL IN: Example: -1px */
-    letter-spacing: ______px;
+    font-family: sans, serif
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -1px;
 }
 
 
@@ -222,8 +213,6 @@ body {
 
     /* FILL IN */
     font-size: ______px;
-
-    /* FILL IN */
     font-weight: ______;
 
     /* FILL IN */
