@@ -294,7 +294,7 @@ body {
 .minimal h3 {
 
     /* FILL IN */
-    font-family: "________________________", sans-serif;
+    font-family: Arial, sans-serif;
 
     /* FILL IN */
     font-size: ______px;
@@ -314,7 +314,7 @@ body {
 .minimal .body-text {
 
     /* FILL IN */
-    font-family: "________________________", sans-serif;
+    font-family: "Times New Roman", sans-serif;
 
     /* FILL IN */
     font-size: ______px;
@@ -356,19 +356,19 @@ body {
 .creative h2 {
 
     /* FILL IN */
-    font-family: "________________________", serif;
+    font-family: "Arial, helvetica", serif;
 
     /* FILL IN */
-    font-size: ______px;
+    font-size: 1px;
 
     /* FILL IN */
-    font-weight: ______;
+    font-weight: 400;
 
     /* FILL IN */
-    line-height: ______;
+    line-height: 0;
 
     /* FILL IN */
-    letter-spacing: ______px;
+    letter-spacing: 1px;
 }
 
 
